@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaniah Ndungu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/hey.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        /* Mobile menu animation */
+        #mobile-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: teal;
+            padding: 10px;
+            border-radius: 5px;
+            animation: slideDown 0.5s ease forwards;
+        }
+
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-teal-900">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+    
+        }
+    
+        
+    
+        /* Mobile menu animation */
+        #mobile-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: rgba(91, 17, 195, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            animation: slideDown 0.5s ease forwards;
+        }
+    
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+    
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <div class="background-image"></div>
+    
+
+    <nav id="navbar" class="py-2">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-white text-4xl font-extrabold">Vaniah<span class="text-pink-400">.</span></span>
+                </div>
+                <div class="hidden sm:block ml-auto">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-white hover:underline px-3 py-2 text-sm font-medium">About Me</a>
+                        <a href="#projects" class="text-white hover:underline px-3 py-2 text-sm font-medium">My Projects</a>
+                        <a href="#contact"
+                            class="text-white border border-pink-400 px-4 rounded-none py-[10px] hover:bg-pink-400 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button"
+                        class="text-white hover:text-light-gray focus:outline-none focus:text-light-gray"
+                        aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6" id="menu-icon">
+                            <!-- Initial icon configuration (closed menu) -->
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"
+                                id="menu-icon-lines">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden sm:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="text-white hover:underline block px-3 py-2 text-base font-medium">Home</a>
+                <a href="#about" class="text-white hover:underline block px-3 py-2 text-base font-medium">About Me</a>
+                <a href="#projects" class="text-white hover:underline block px-3 py-2 text-base font-medium">My Projects</a>
+                <a href="#contact"
+                    class="text-white border border-pink-400 block px-3 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="profile-image-container">
+        <img src="./img/heey.jpg" alt="Your Name" class="profile-image">
+    </div>
+
+    <section id="hero" class="text-white py-22">
+        
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h4 class="text-6xl font-bold text-blue-300 lg:leading-[94px] lg:text-[38px]">Hey There! I'm <strong class="text-pink-400">Vaniah Ndungu</h4></strong>
+            <h1 class="text-5xl mt-4 mb-20 font-bold lg:text-[86px] lg:leading-[94px]"><span id="typed"></span></h1>
+            <p class="text-blue-300 font-normal text-base w-full lg:w-3/6 mt-3 mb-10"><strong>First Project Showcase!</strong> Greetings from Ruiru, Kiambu County! After 24 hours of relentless dedication, I'm thrilled to unveil my inaugural project. It's been an incredible journey,and I couldn't be prouder of the outcome.<br>
+            Stay tuned for more updates and exciting developments!
+            </p>
+            <div class="mt-6">
+                <div class="mt-6 flex items-center gap-3">
+                    <a href="#contact"
+                        class="btn-pink-400 bg-pink-400 text-white rounded-none py-3 px-6 text-lg font-medium mr-4">Email
+                        Me</a>
+                    <a href="#" class="flex items-center text-blue-300 font-bold text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                        <span class="ml-2 hover:underline">Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="border-t-2 border-pink-400 mr-20 ml-20 mb-20 mt-20">
+    <section id="about">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="block md:flex items-start justify-center">
+                <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-4/5 mt-20">About Me.
+                </h2>
+                <div class="mt-6 md-0">
+                    <a href="#reason"
+                        class="text-blue-300 hover:underline hover: px-5 py-5 rounded-none text-base font-medium mt-10">Why I opted to learn Programming with DirectEd- <strong class="text-pink-400 hover:underline">Click here</strong></a>
+                </div>
+                <div class="mt-6 md-0 w-full md:w-[360px]">
+                    <div class="flex items-center">
+                        <hr class="w-14 border-t-2 border-pink-400 mr-4">
+                        <h6 class="text-pink-400 font-bold text-xl mr-4 lg:text-xl ">💡Did you Know?</h6>
+                    </div>
+                    
+                    <p class="mt-2 text-blue-300">Exploring the fusion of music and technology opens a world of
+                        creativity, from composing culinary-inspired tunes to
+                        experimenting with digital instruments.</p>
+                </div>
+                
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
+                <div class="card-service bg-blue-300 shadow-md rounded-none px-6 py-16" style="position:relative;">
+                    <svg width="100%" height="6" style="position:absolute; bottom: 0; left: 0; left: 0;"
+                        viewBox="0 0 360 6" fill="none" xmins="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="6" fill="#EC407A" />
+                    </svg>
+                    <svg fill="#EC407A" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px"
+                        viewBox="0 0 276.164 276.164" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    d="M156.716,61.478c-4.111,6.276-8.881,11.511-14.212,15.609l-8.728,6.962c-13.339,11.855-22.937,21.433-28.542,28.464 c-10.209,12.788-15.806,25.779-16.65,38.611c-0.942,14.473,3.187,28.21,12.275,40.84c9.636,13.458,21.8,20.754,36.164,21.69 c3.291,0.218,6.897,0.182,9.896-0.015l-1.121-10.104c-2.09,0.192-4.306,0.223-6.628,0.068c-9.437-0.617-17.864-4.511-25.064-11.573 c-7.524-7.333-10.895-15.415-10.287-24.7c1.149-17.59,12.562-35.004,33.925-51.792l9.543-7.599 c8.394-7.174,15.192-16.191,20.216-26.825c4.971-10.556,7.886-21.983,8.673-33.96c0.466-7.037-0.513-15.775-2.874-25.965 c-3.241-13.839-7.854-20.765-14.136-21.179c-2.232-0.138-4.676,0.986-7.658,3.617c-7.252,6.548-12.523,14.481-15.683,23.542 c-2.438,6.926-4.057,16.189-4.805,27.529c-0.313,4.72,0.313,13.438,1.805,23.962l8.844-8.192c-0.028-1.183,0.005-2.413,0.096-3.703 c0.466-7.221,2.289-15.062,5.394-23.293c3.956-10.296,7.689-13.409,10.133-14.204c0.668-0.218,1.32-0.298,2.015-0.254 c3.185,0.212,6.358,1.559,5.815,9.979C164.664,46.132,161.831,53.693,156.716,61.478z">
+                                </path>
+                                <path
+                                    d="M164.55,209.161c5.728-2.568,10.621-6.478,14.576-11.651c5.055-6.561,7.897-14.316,8.467-23.047 c0.72-10.719-1.854-20.438-7.617-28.895c-6.322-9.264-14.98-14.317-25.745-15.026c-1.232-0.081-2.543-0.075-3.895,0.025 l-2.304-17.191l-9.668,7.112l1.483,12.194c-5.789,2.393-10.827,6.17-15.017,11.255c-4.823,5.924-7.508,12.443-7.964,19.382 c-0.466,7.208,1.142,13.81,4.782,19.583c1.895,3.081,4.507,5.82,7.498,8.058c4.906,3.65,10.563,3.376,11.459,1.393 c0.906-1.983-2.455-5.095-5.09-9.248c-1.502-2.351-2.242-5.173-2.242-8.497c0-7.053,4.256-13.116,10.317-15.799l5.673,44.211 l1.325,10.258c0.864,4.873,1.719,9.725,2.537,14.52c1,6.488,1.352,12.112,1.041,16.715c-0.419,6.375-2.408,11.584-5.919,15.493 c-2.234,2.485-4.844,4.055-7.795,4.925c3.961-3.962,6.414-9.43,6.414-15.478c0-12.075-9.792-21.872-21.87-21.872 c-3.353,0-6.491,0.812-9.329,2.159c-0.36,0.155-0.699,0.388-1.054,0.574c-0.779,0.425-1.559,0.85-2.286,1.362 c-0.249,0.187-0.487,0.403-0.732,0.605c-4.888,3.816-8.091,9.616-8.375,16.229c0,0.01-0.011,0.021-0.011,0.031 c0,0.005,0,0.01,0,0.016c-0.013,0.311-0.09,0.59-0.09,0.896c0,0.259,0.067,0.492,0.078,0.74 c-0.011,7.084,2.933,13.179,8.839,18.118c5.584,4.666,12.277,7.28,19.892,7.777c4.327,0.28,8.505-0.217,12.407-1.485 c3.189-1.041,6.275-2.62,9.149-4.687c6.96-5.022,10.75-11.584,11.272-19.532c0.399-6.063,0.094-13.235-0.937-21.411l-2.838-18.429 l-7.156-52.899c7.984,1.532,14.027,8.543,14.027,16.968c0,5.986-1.937,15.431-5.551,20.376L164.55,209.161z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <h5 class="text-white text-2xl font-bold mt-11">
+                        Music
+                    </h5>
+                    <p class="text-gray text-base mb-4 leading-5 mt-5">Music is my passion; I find joy in both the
+                        intricate melodies of piano keys and the challenge of mastering various
+                        guitar pieces, constantly pushing myself to explore new musical horizons.</p>
+                </div>
+                <div class="card-service bg-blue-300 shadow-md rounded-none px-6 py-16" style="position:relative;">
+                    <svg width="100%" height="6" style="position:absolute; bottom: 0; left: 0; left: 0;"
+                        viewBox="0 0 360 6" fill="none" xmins="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="6" fill="#EC407A" />
+                    </svg>
+                    <svg fill="#EC407A" width="97px" height="97px" viewBox="0 -37.5 122.88 122.88" version="1.1"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        style="enable-background:new 0 0 122.88 47.87" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <style type="text/css">
+                                .st0 {
+                                    fill-rule: evenodd;
+                                    clip-rule: evenodd;
+                                }
+                            </style>
+                            <g>
+                                <path class="st0"
+                                    d="M4.98,27.65H29.7c2.16,0,4.01,1.39,4.7,3.33h20.28l-0.76-4.02c-0.17-0.9,0.42-1.76,1.32-1.93 c0.1-0.02,0.2-0.03,0.3-0.03v0h65.68c0.91,0,1.66,0.74,1.66,1.66c0,0.19-0.03,0.37-0.09,0.54l-2.69,10.18 c-0.77,2.93-2.07,5.69-4.02,7.63c-1.76,1.76-4.02,2.86-6.84,2.86h-42.5c-2.88,0-5.26-1.13-7.09-2.96 c-1.95-1.95-3.24-4.69-3.79-7.65l-0.56-2.96H34.4c-0.69,1.93-2.54,3.33-4.7,3.33H4.98C2.25,37.62,0,35.38,0,32.64 C0,29.9,2.24,27.65,4.98,27.65L4.98,27.65z M104.49,0.48c0.65-0.65,1.7-0.65,2.34,0s0.65,1.7,0,2.34c-1.58,1.58-0.86,2.93-0.02,4.5 c1.41,2.64,3.04,5.67,0.28,10.44c-0.46,0.79-1.47,1.06-2.26,0.6c-0.79-0.46-1.06-1.47-0.6-2.26c1.83-3.18,0.68-5.34-0.33-7.23 C102.44,6.15,101.18,3.8,104.49,0.48L104.49,0.48z M92.17,0.48c0.65-0.65,1.7-0.65,2.34,0s0.65,1.7,0,2.34 c-1.58,1.58-0.86,2.93-0.02,4.5c1.41,2.64,3.04,5.67,0.28,10.44c-0.46,0.79-1.47,1.06-2.26,0.6c-0.79-0.46-1.06-1.47-0.6-2.26 c1.83-3.18,0.68-5.34-0.33-7.23C90.12,6.15,88.86,3.8,92.17,0.48L92.17,0.48z M79.86,0.48c0.65-0.65,1.7-0.65,2.34,0 c0.65,0.65,0.65,1.7,0,2.34c-1.58,1.58-0.86,2.93-0.02,4.5c1.41,2.64,3.04,5.67,0.28,10.44c-0.46,0.79-1.47,1.06-2.26,0.6 c-0.79-0.46-1.06-1.47-0.6-2.26c1.83-3.18,0.68-5.34-0.33-7.23C77.8,6.15,76.54,3.8,79.86,0.48L79.86,0.48z M67.54,0.48 c0.65-0.65,1.7-0.65,2.34,0c0.65,0.65,0.65,1.7,0,2.34c-1.58,1.58-0.86,2.93-0.02,4.5c1.41,2.64,3.04,5.67,0.28,10.44 c-0.46,0.79-1.47,1.06-2.26,0.6s-1.06-1.47-0.6-2.26c1.83-3.18,0.68-5.34-0.33-7.23C65.49,6.15,64.23,3.8,67.54,0.48L67.54,0.48z M116.91,36.53l2.17-8.22H57.54l1.57,8.34c0.44,2.32,1.42,4.45,2.89,5.92c1.23,1.23,2.83,1.99,4.75,1.99h42.5 c1.85,0,3.33-0.73,4.5-1.89C115.25,41.16,116.28,38.94,116.91,36.53L116.91,36.53z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <h5 class="text-white text-2xl font-bold mt-11">
+                        Cooking
+                    </h5>
+                    <p class="text-gray text-base mb-4 leading-5 mt-5">Cooking is my escape; I relish spending my free
+                        time experimenting in the kitchen, mastering a wide array of recipes and
+                        finding joy in every culinary creation.</p>
+                </div>
+                <div class="card-service bg-blue-300 shadow-md rounded-none px-6 py-16" style="position:relative;">
+                    <svg width="100%" height="6" style="position:absolute; bottom: 0; left: 0; left: 0;"
+                        viewBox="0 0 360 6" fill="none" xmins="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="6" fill="#EC407A" />
+                    </svg>
+                    <svg fill="#EC407A" width="97px" height="97px" viewBox="0 0 14 14" role="img" focusable="false"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="m 11.8,10.6 0,-7.2035638 C 11.8,2.7367083 11.264337,2.2 10.603564,2.2 l -7.2071278,0 C 2.7367083,2.2 2.2,2.7356627 2.2,3.3964362 L 2.2,10.6 1,10.6 1,11.2 c 0,0.333681 0.2664272,0.6 0.5950819,0.6 l 10.8098361,0 C 12.726816,11.8 13,11.531371 13,11.2 l 0,-0.6 -1.2,0 z m -8.4,-7.2 7.2,0 0,5.4 -7.2,0 0,-5.4 z m 2.4,6.6 2.4,0 0,0.6 -2.4,0 0,-0.6 z">
+                            </path>
+                        </g>
+                    </svg>
+                    <h5 class="text-white text-2xl font-bold mt-11">
+                        Tech
+                    </h5>
+                    <p class="text-gray text-base mb-4 leading-5 mt-5">My passion for technology drives me to constantly
+                        seek out and learn new concepts, going the extra mile to explore the
+                        latest innovations and master them out of genuine interest. I thrive on the challenge of pushing
+                        my boundaries,
+                        embracing increasingly complex ideas and projects that stimulate my mind and fuel my curiosity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <setion id="projects" class="mt-28 py-28 bg-blue-300">
+        <div class="container max-2-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="block md:flex items-center justify-between">
+                <div>
+                    <div class="flex items-center">
+                        <hr class="w-14 border-t-2 border-pink-400 mr-4 mt-20">
+                        <h6 class="text-pink-400 font-bold text-xl mr-4 lg:text-xl mt-20">😁Wanna see my work?</h6>
+                    </div>
+                    <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">My Projects</h2>
+                </div>
+                <div class="mt-6 md-0">
+                    <a href="#"
+                        class="text-white border border-pink-400 px-3 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Back to Top</a>
+                </div>
+                <div class="mt-6 md-0">
+                    <a href="#contact"
+                        class="text-white border border-pink-400 px-3 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="w-full md:w-1/2 px-4 mt-20">
+                        <div class="relative">
+                            <img src="./img/taco.png" alt="" class="w-full">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 mt-20">
+                        <div class="mt-4">
+                            <h5 class="text-[28px] font-semibold text-blue-300">The Little Taco Shop👨‍🍳</h5>
+                            <p class="text-white text-bold">Creating a website using only pure HTML and minor CSS codes may result in a basic appearance, but the experience serves
+                            as a valuable foundation in web development. By focusing on the fundamentals, I gained a deeper understanding of
+                            HTML's structure and CSS's styling capabilities. Despite its simplicity, this project honed my problem-solving skills
+                            and introduced me to essential concepts in web design. Starting with a basic project allows for a focused mastery of
+                            core principles without overwhelming complexity, laying the groundwork for future growth and experimentation with more
+                            advanced techniques and technologies.</p>
+                            <a href="https://github.com/Vaniah1/VanN." class="flex items-center text-pink-400 font-medium text-xl mt-2">
+                                <span class="mr-2 hover:underline">See Repository</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="w-full md:w-1/2 px-4 mt-20">
+                        <div class="relative">
+                            <img src="./img/vts.png" alt="" class="w-full">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 mt-20">
+                        <div class="mt-4">
+                            <h5 class="text-[28px] font-semibold text-blue-300">Vaniah's Taco Shop🌮</h5>
+                            <p class="text-white text-bold">The redesigned website has undergone a significant transformation, boasting a meticulous implementation of CSS code that
+                            elevates its visual appeal to new heights. The inclusion of intricate design elements lends a captivating allure to the
+                            interface, with enhancements such as dynamic video backgrounds that engage visitors from the moment they arrive.
+                            Furthermore, additional features have been seamlessly integrated to enrich user experience, including interactive
+                            animations, intuitive navigation menus, personalized user profiles, and enhanced accessibility options. These
+                            enhancements collectively contribute to a more immersive and engaging browsing experience, setting a new standard for
+                            the website's aesthetics and functionality.</p>
+                            <a href="https://github.com/Vaniah1/VTS" class="flex items-center text-pink-400 font-medium text-xl mt-2">
+                                <span class="mr-2 hover:underline">See Repository</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="w-full md:w-1/2 px-4 mt-20">
+                        <div class="relative">
+                            <img src="./img/rocket.png" alt="" class="w-full">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 mt-20">
+                        <div class="mt-4">
+                            <h5 class="text-[28px] font-semibold text-blue-300">Vaniah Rokets🚀</h5>
+                            <p class="text-white text-bold">This code now leverages Tailwind CSS, offering a significantly smoother and expedited development experience. With its
+                            streamlined utility classes, designing interfaces becomes a breeze. Additionally, the integration of Tailwind CSS has
+                            empowered the implementation of dynamic animations within the webpage. For instance, a toggle menu bar seamlessly
+                            transitions into an 'x' shape, enhancing both functionality and visual appeal. This not only enhances user interaction
+                            but also elevates the overall aesthetics of the web experience.</p>
+                            <a href="https://github.com/Vaniah1/Rockets-Tailwindcss" class="flex items-center text-pink-400 font-medium text-xl mt-2">
+                                <span class="mr-2 hover:underline">See Repository</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </setion>
+    <hr class="border-t-2 border-pink-400 mr-20 ml-20 mb-3 mt-10">
+    <section id="contact">
+        <div class="max-w-xl mx-auto my-10 bg-white rounded-lg shadow-lg custom-border">
+            <h2 class="text-2xl font-semibold text-center mb-4">Contact Us</h2>
+            <form action="https://forms.gle/wR2Y3J2EUyG8D9hXA" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block font-medium">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name"
+                        class="block w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        required>
+                </div>
+                <div>
+                    <label for="email" class="block font-medium">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email"
+                        class="block w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        required>
+                </div>
+                <div>
+                    <label for="message" class="block font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"
+                        class="block w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    <hr class="border-t-2 border-pink-400 mr-20 ml-20 mb-3 mt-10">
+    <section id="reason">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="block md:flex items-start justify-center">
+                <div class="text-white text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-4/5 mt-20">Since You Came,<br> Lemme Tell You.
+                <h3 class="text-pink-400 text-5xl mt-4 font-bold lg:text-[86px] lg:leading-[94px]"><span id="end"></span></h3></div>
+                
+                <div class="mt-6 md-0 w-full md:w-[360px]">
+                    <div class="flex items-center">
+                        <hr class="w-14 border-t-2 border-pink-400 mr-4">
+                        <h6 class="text-blue-300 font-bold text-xl mr-4 lg:text-xl ">Here It is✨🙂</h6>
+                    </div>
+    
+                    <p class="mt-9 text-blue-300">My fascination with technology propelled me into the realm of programming, particularly with DirectEd, recognizing its
+                    pivotal role in shaping our modern world. From childhood curiosity to witnessing the transformative power of code, I've
+                    embraced programming as a means of understanding and actively influencing the technological landscape. With DirectEd,
+                    I've found a streamlined approach to coding that empowers me to create, innovate, and tackle complex challenges head-on.
+                    This journey has not only deepened my appreciation for the boundless possibilities of technology but also ignited a
+                    sense of purpose—to leverage programming with DirectEd to drive positive change and innovation in today's interconnected
+                    world.</p>
+                </div>
+                <div class="mt-6 md-0">
+                    <a href="#"
+                        class="text-white border border-pink-400 px-2 py-2 rounded-none text-base font-normal hover:bg-pink-400 focus:bg-pink-400 mt-10">Home</a>
+                </div><br>
+                <div class="mt-6 md-0">
+                    <a href="#contact"
+                        class="text-white border border-pink-400 px-2 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Contact</a>
+                </div><br>
+                <div class="mt-6 md-0">
+                    <a href="#projects"
+                        class="text-white border border-pink-400 px-2 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Projects</a>
+                </div><br>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pt-8 pb-6 bg-blue-700 max-w-full mt-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex justify-between items-start">
+                <span class="text-white font-bold text-[26px]">Vaniah<span lass="text-pink-400"></span></span>
+                <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
+                    <div class="info">
+                        <h6 class="text-xl text-pink-400 font-semibold mb-6">Information</h6>
+                        <ul class="text-white space-y-3">
+                            <li class="hover:underline"><a href="https://www.instagram.com/official_v.aniah/">@official_v.aniah</a></li>
+                            <li class="hover:underline"><a href="tel:+254706474000">0706474000</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h6 class="text-xl text-pink-400 font-semibold mb-6">Platform</h6>
+                        <ul class="text-white space-y-3">
+                            <li class="hover:underline"><a href="https://www.instagram.com/official_v.aniah/">Instagram Page</a></li>
+                            <li class="hover:underline"><a href="tel:+254706474000">Whatsapp</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mobile-menu-btn").click(function () {
+                $("#mobile-menu").slideToggle();
+                $("#menu-icon").toggleClass("open");
+            });
+        });
+    </script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Musicophile', 'Pianist', 'Chef', 'Tech Enthusiast.'],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true
+        
+        });
+    </script>
+    <script>
+        var typed = new Typed('#end', {
+            strings: ['Thank You', 'Gracias', 'Danke', 'Merci', 'Grazie',  '谢谢', 'Ameseginalehu', 'Tack', 'Asante Sana', 'DirectEd',],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true
+        });    
+    </script>
+</body>
+
+</html>
