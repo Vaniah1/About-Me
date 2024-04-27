@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaniah Ndungu</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="./img/hey.png">
+    <link rel="icon" href="./img/stillme.jpg">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
     <link rel="stylesheet"
@@ -43,7 +43,7 @@
             background-color: teal;
             padding: 10px;
             border-radius: 5px;
-            animation: slideDown 0.5s ease forwards;
+            animation: slideDown 1.0 ease forwards;
         }
 
         @keyframes slideDown {
@@ -114,20 +114,20 @@
     
 
     <nav id="navbar" class="py-2">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0 flex items-center">
-                    <span class="text-white text-4xl font-extrabold">Vaniah<span class="text-pink-400">.</span></span>
+        <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center flex-shrink-0">
+                    <span class="text-4xl font-extrabold text-white">Vaniah<span class="text-pink-400">.</span></span>
                 </div>
-                <div class="hidden sm:block ml-auto">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#about" class="text-white hover:underline px-3 py-2 text-sm font-medium">About Me</a>
-                        <a href="#projects" class="text-white hover:underline px-3 py-2 text-sm font-medium">My Projects</a>
+                <div class="hidden ml-auto sm:block">
+                    <div class="flex items-baseline ml-10 space-x-4">
+                        <a href="#about" class="px-3 py-2 text-sm font-medium text-white hover:underline">About Me</a>
+                        <a href="#projects" class="px-3 py-2 text-sm font-medium text-white hover:underline">My Projects</a>
                         <a href="#contact"
                             class="text-white border border-pink-400 px-4 rounded-none py-[10px] hover:bg-pink-400 text-sm font-medium">Contact</a>
                     </div>
                 </div>
-                <div class="sm:hidden flex items-center">
+                <div class="flex items-center sm:hidden">
                     <button id="mobile-menu-btn" type="button"
                         class="text-white hover:text-light-gray focus:outline-none focus:text-light-gray"
                         aria-label="Toggle menu">
@@ -144,11 +144,10 @@
         </div>
         <div id="mobile-menu" class="hidden sm:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="text-white hover:underline block px-3 py-2 text-base font-medium">Home</a>
-                <a href="#about" class="text-white hover:underline block px-3 py-2 text-base font-medium">About Me</a>
-                <a href="#projects" class="text-white hover:underline block px-3 py-2 text-base font-medium">My Projects</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-white hover:underline">About Me</a>
+                <a href="#projects" class="block px-3 py-2 text-base font-medium text-white hover:underline">My Projects</a>
                 <a href="#contact"
-                    class="text-white border border-pink-400 block px-3 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400">Contact</a>
+                    class="block px-3 py-2 text-base font-medium text-white border border-pink-400 rounded-none hover:bg-pink-400 focus:bg-pink-400">Contact</a>
             </div>
         </div>
     </nav>
@@ -158,43 +157,35 @@
 
     <section id="hero" class="text-white py-22">
         
-        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="container max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
             <h4 class="text-6xl font-bold text-blue-300 lg:leading-[94px] lg:text-[38px]">Hey There! I'm <strong class="text-pink-400">Vaniah Ndungu</h4></strong>
             <h1 class="text-5xl mt-4 mb-20 font-bold lg:text-[86px] lg:leading-[94px]"><span id="typed"></span></h1>
-            <p class="text-blue-300 font-normal text-base w-full lg:w-3/6 mt-3 mb-10"><strong>First Project Showcase!</strong> Greetings from Ruiru, Kiambu County! After 24 hours of relentless dedication, I'm thrilled to unveil my inaugural project. It's been an incredible journey,and I couldn't be prouder of the outcome.<br>
+            <p class="w-full mt-3 mb-10 text-base font-normal text-blue-300 lg:w-3/6"><strong>First Project Showcase!</strong> Greetings from Ruiru, Kiambu County! After 24 hours of relentless dedication, I'm thrilled to unveil my inaugural project. It's been an incredible journey,and I couldn't be prouder of the outcome.<br>
             Stay tuned for more updates and exciting developments!
             </p>
             <div class="mt-6">
-                <div class="mt-6 flex items-center gap-3">
+                <div class="flex items-center gap-3 mt-6">
                     <a href="#contact"
-                        class="btn-pink-400 bg-pink-400 text-white rounded-none py-3 px-6 text-lg font-medium mr-4">Email
+                        class="px-6 py-3 mr-4 text-lg font-medium text-white bg-pink-400 rounded-none btn-pink-400">Email
                         Me</a>
-                    <a href="#" class="flex items-center text-blue-300 font-bold text-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                        </svg>
-                        <span class="ml-2 hover:underline">Download CV</span>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <hr class="border-t-2 border-pink-400 mr-20 ml-20 mb-20 mt-20">
+    <hr class="mt-20 mb-20 ml-20 mr-20 border-t-2 border-pink-400">
     <section id="about">
-        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="block md:flex items-start justify-center">
-                <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-4/5 mt-20">About Me.
+        <div class="container max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="items-start justify-center block md:flex">
+                <h2 class="w-full mt-20 mb-2 text-3xl font-bold text-white lg:text-5xl md:w-1/2 lg:w-4/5">About Me.
                 </h2>
                 <div class="mt-6 md-0">
                     <a href="#reason"
-                        class="text-blue-300 hover:underline hover: px-5 py-5 rounded-none text-base font-medium mt-10">Why I opted to learn Programming with DirectEd- <strong class="text-pink-400 hover:underline">Click here</strong></a>
+                        class="px-5 py-5 mt-10 text-base font-medium text-blue-300 rounded-none hover:underline hover:">Why I opted to learn Programming with DirectEd- <strong class="text-pink-400 hover:underline">Click here</strong></a>
                 </div>
                 <div class="mt-6 md-0 w-full md:w-[360px]">
                     <div class="flex items-center">
-                        <hr class="w-14 border-t-2 border-pink-400 mr-4">
-                        <h6 class="text-pink-400 font-bold text-xl mr-4 lg:text-xl ">💡Did you Know?</h6>
+                        <hr class="mr-4 border-t-2 border-pink-400 w-14">
+                        <h6 class="mr-4 text-xl font-bold text-pink-400 lg:text-xl ">💡Did you Know?</h6>
                     </div>
                     
                     <p class="mt-2 text-blue-300">Exploring the fusion of music and technology opens a world of
@@ -203,8 +194,8 @@
                 </div>
                 
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
-                <div class="card-service bg-blue-300 shadow-md rounded-none px-6 py-16" style="position:relative;">
+            <div class="grid grid-cols-1 gap-6 mt-20 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="px-6 py-16 bg-blue-300 rounded-none shadow-md card-service" style="position:relative;">
                     <svg width="100%" height="6" style="position:absolute; bottom: 0; left: 0; left: 0;"
                         viewBox="0 0 360 6" fill="none" xmins="http://www.w3.org/2000/svg">
                         <rect width="100%" height="6" fill="#EC407A" />
@@ -225,14 +216,14 @@
                             </g>
                         </g>
                     </svg>
-                    <h5 class="text-white text-2xl font-bold mt-11">
+                    <h5 class="text-2xl font-bold text-white mt-11">
                         Music
                     </h5>
-                    <p class="text-gray text-base mb-4 leading-5 mt-5">Music is my passion; I find joy in both the
+                    <p class="mt-5 mb-4 text-base leading-5 text-gray">Music is my passion; I find joy in both the
                         intricate melodies of piano keys and the challenge of mastering various
                         guitar pieces, constantly pushing myself to explore new musical horizons.</p>
                 </div>
-                <div class="card-service bg-blue-300 shadow-md rounded-none px-6 py-16" style="position:relative;">
+                <div class="px-6 py-16 bg-blue-300 rounded-none shadow-md card-service" style="position:relative;">
                     <svg width="100%" height="6" style="position:absolute; bottom: 0; left: 0; left: 0;"
                         viewBox="0 0 360 6" fill="none" xmins="http://www.w3.org/2000/svg">
                         <rect width="100%" height="6" fill="#EC407A" />
@@ -256,14 +247,14 @@
                             </g>
                         </g>
                     </svg>
-                    <h5 class="text-white text-2xl font-bold mt-11">
+                    <h5 class="text-2xl font-bold text-white mt-11">
                         Cooking
                     </h5>
-                    <p class="text-gray text-base mb-4 leading-5 mt-5">Cooking is my escape; I relish spending my free
+                    <p class="mt-5 mb-4 text-base leading-5 text-gray">Cooking is my escape; I relish spending my free
                         time experimenting in the kitchen, mastering a wide array of recipes and
                         finding joy in every culinary creation.</p>
                 </div>
-                <div class="card-service bg-blue-300 shadow-md rounded-none px-6 py-16" style="position:relative;">
+                <div class="px-6 py-16 bg-blue-300 rounded-none shadow-md card-service" style="position:relative;">
                     <svg width="100%" height="6" style="position:absolute; bottom: 0; left: 0; left: 0;"
                         viewBox="0 0 360 6" fill="none" xmins="http://www.w3.org/2000/svg">
                         <rect width="100%" height="6" fill="#EC407A" />
@@ -278,10 +269,10 @@
                             </path>
                         </g>
                     </svg>
-                    <h5 class="text-white text-2xl font-bold mt-11">
+                    <h5 class="text-2xl font-bold text-white mt-11">
                         Tech
                     </h5>
-                    <p class="text-gray text-base mb-4 leading-5 mt-5">My passion for technology drives me to constantly
+                    <p class="mt-5 mb-4 text-base leading-5 text-gray">My passion for technology drives me to constantly
                         seek out and learn new concepts, going the extra mile to explore the
                         latest innovations and master them out of genuine interest. I thrive on the challenge of pushing
                         my boundaries,
@@ -291,33 +282,33 @@
             </div>
         </div>
     </section>
-    <setion id="projects" class="mt-28 py-28 bg-blue-300">
-        <div class="container max-2-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="block md:flex items-center justify-between">
+    <setion id="projects" class="bg-blue-300 mt-28 py-28">
+        <div class="container px-4 mx-auto max-2-6xl sm:px-6 lg:px-8">
+            <div class="items-center justify-between block md:flex">
                 <div>
                     <div class="flex items-center">
-                        <hr class="w-14 border-t-2 border-pink-400 mr-4 mt-20">
-                        <h6 class="text-pink-400 font-bold text-xl mr-4 lg:text-xl mt-20">😁Wanna see my work?</h6>
+                        <hr class="mt-20 mr-4 border-t-2 border-pink-400 w-14">
+                        <h6 class="mt-20 mr-4 text-xl font-bold text-pink-400 lg:text-xl">😁Wanna see my work?</h6>
                     </div>
-                    <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">My Projects</h2>
+                    <h2 class="mt-4 mb-2 text-3xl font-bold text-white lg:text-5xl md:w-3/4">My Projects</h2>
                 </div>
                 <div class="mt-6 md-0">
                     <a href="#"
-                        class="text-white border border-pink-400 px-3 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Back to Top</a>
+                        class="px-3 py-2 mt-10 text-base font-medium text-white border border-pink-400 rounded-none hover:bg-pink-400 focus:bg-pink-400">Back to Top</a>
                 </div>
                 <div class="mt-6 md-0">
                     <a href="#contact"
-                        class="text-white border border-pink-400 px-3 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Contact Us</a>
+                        class="px-3 py-2 mt-10 text-base font-medium text-white border border-pink-400 rounded-none hover:bg-pink-400 focus:bg-pink-400">Contact Us</a>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div class="w-full md:w-1/2 px-4 mt-20">
+                <div class="flex flex-col justify-between md:flex-row">
+                    <div class="w-full px-4 mt-20 md:w-1/2">
                         <div class="relative">
                             <img src="./img/taco.png" alt="" class="w-full">
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 px-4 mt-20">
+                    <div class="w-full px-4 mt-20 md:w-1/2">
                         <div class="mt-4">
                             <h5 class="text-[28px] font-semibold text-blue-300">The Little Taco Shop👨‍🍳</h5>
                             <p class="text-white text-bold">Creating a website using only pure HTML and minor CSS codes may result in a basic appearance, but the experience serves
@@ -326,7 +317,7 @@
                             and introduced me to essential concepts in web design. Starting with a basic project allows for a focused mastery of
                             core principles without overwhelming complexity, laying the groundwork for future growth and experimentation with more
                             advanced techniques and technologies.</p>
-                            <a href="https://github.com/Vaniah1/VanN." class="flex items-center text-pink-400 font-medium text-xl mt-2">
+                            <a href="https://github.com/Vaniah1/VanN." class="flex items-center mt-2 text-xl font-medium text-pink-400">
                                 <span class="mr-2 hover:underline">See Repository</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                                     class="w-6 h-6">
@@ -340,13 +331,13 @@
 
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div class="w-full md:w-1/2 px-4 mt-20">
+                <div class="flex flex-col justify-between md:flex-row">
+                    <div class="w-full px-4 mt-20 md:w-1/2">
                         <div class="relative">
                             <img src="./img/vts.png" alt="" class="w-full">
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 px-4 mt-20">
+                    <div class="w-full px-4 mt-20 md:w-1/2">
                         <div class="mt-4">
                             <h5 class="text-[28px] font-semibold text-blue-300">Vaniah's Taco Shop🌮</h5>
                             <p class="text-white text-bold">The redesigned website has undergone a significant transformation, boasting a meticulous implementation of CSS code that
@@ -356,7 +347,7 @@
                             animations, intuitive navigation menus, personalized user profiles, and enhanced accessibility options. These
                             enhancements collectively contribute to a more immersive and engaging browsing experience, setting a new standard for
                             the website's aesthetics and functionality.</p>
-                            <a href="https://github.com/Vaniah1/VTS" class="flex items-center text-pink-400 font-medium text-xl mt-2">
+                            <a href="https://github.com/Vaniah1/VTS" class="flex items-center mt-2 text-xl font-medium text-pink-400">
                                 <span class="mr-2 hover:underline">See Repository</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                                     class="w-6 h-6">
@@ -371,21 +362,21 @@
             
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="flex flex-col md:flex-row justify-between">
-                    <div class="w-full md:w-1/2 px-4 mt-20">
+                <div class="flex flex-col justify-between md:flex-row">
+                    <div class="w-full px-4 mt-20 md:w-1/2">
                         <div class="relative">
                             <img src="./img/rocket.png" alt="" class="w-full">
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 px-4 mt-20">
+                    <div class="w-full px-4 mt-20 md:w-1/2">
                         <div class="mt-4">
-                            <h5 class="text-[28px] font-semibold text-blue-300">Vaniah Rokets🚀</h5>
+                            <h5 class="text-[28px] font-semibold text-blue-300">Vaniah Rockets🚀</h5>
                             <p class="text-white text-bold">This code now leverages Tailwind CSS, offering a significantly smoother and expedited development experience. With its
                             streamlined utility classes, designing interfaces becomes a breeze. Additionally, the integration of Tailwind CSS has
                             empowered the implementation of dynamic animations within the webpage. For instance, a toggle menu bar seamlessly
                             transitions into an 'x' shape, enhancing both functionality and visual appeal. This not only enhances user interaction
                             but also elevates the overall aesthetics of the web experience.</p>
-                            <a href="https://github.com/Vaniah1/Rockets-Tailwindcss" class="flex items-center text-pink-400 font-medium text-xl mt-2">
+                            <a href="https://github.com/Vaniah1/Rockets-Tailwindcss" class="flex items-center mt-2 text-xl font-medium text-pink-400">
                                 <span class="mr-2 hover:underline">See Repository</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                                     class="w-6 h-6">
@@ -399,50 +390,50 @@
 
             </div>
     </setion>
-    <hr class="border-t-2 border-pink-400 mr-20 ml-20 mb-3 mt-10">
+    <hr class="mt-10 mb-3 ml-20 mr-20 border-t-2 border-pink-400">
     <section id="contact">
         <div class="max-w-xl mx-auto my-10 bg-white rounded-lg shadow-lg custom-border">
-            <h2 class="text-2xl font-semibold text-center mb-4">Contact Us</h2>
+            <h2 class="mb-4 text-2xl font-semibold text-center">Contact Me</h2>
             <form action="https://forms.gle/wR2Y3J2EUyG8D9hXA" method="post" class="space-y-4">
                 <div>
                     <label for="name" class="block font-medium">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name"
-                        class="block w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        class="block w-full px-4 py-2 border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
                         required>
                 </div>
                 <div>
                     <label for="email" class="block font-medium">Email</label>
                     <input type="email" id="email" name="email" placeholder="Your Email"
-                        class="block w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                        class="block w-full px-4 py-2 border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"
                         required>
                 </div>
                 <div>
                     <label for="message" class="block font-medium">Message</label>
                     <textarea id="message" name="message" rows="4" placeholder="Your Message"
-                        class="block w-full px-4 py-2 rounded-md border-gray-300 focus:border-blue-500 focus:ring-blue-500"></textarea>
+                        class="block w-full px-4 py-2 border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500"></textarea>
                 </div>
                 <div>
                     <button type="submit"
-                        class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none">Submit</button>
+                        class="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:bg-blue-600 focus:outline-none">Submit</button>
                 </div>
                 
             </form>
         </div>
     </section>
-    <hr class="border-t-2 border-pink-400 mr-20 ml-20 mb-3 mt-10">
+    <hr class="mt-10 mb-3 ml-20 mr-20 border-t-2 border-pink-400">
     <section id="reason">
-        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="block md:flex items-start justify-center">
-                <div class="text-white text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-4/5 mt-20">Since You Came,<br> Lemme Tell You.
+        <div class="container max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="items-start justify-center block md:flex">
+                <div class="w-full mt-20 mb-2 text-3xl font-bold text-white lg:text-5xl md:w-1/2 lg:w-4/5">Since You Came,<br> Lemme Tell You.
                 <h3 class="text-pink-400 text-5xl mt-4 font-bold lg:text-[86px] lg:leading-[94px]"><span id="end"></span></h3></div>
                 
                 <div class="mt-6 md-0 w-full md:w-[360px]">
                     <div class="flex items-center">
-                        <hr class="w-14 border-t-2 border-pink-400 mr-4">
-                        <h6 class="text-blue-300 font-bold text-xl mr-4 lg:text-xl ">Here It is✨🙂</h6>
+                        <hr class="mr-4 border-t-2 border-pink-400 w-14">
+                        <h6 class="mr-4 text-xl font-bold text-blue-300 lg:text-xl ">Here It is✨🙂</h6>
                     </div>
     
-                    <p class="mt-9 text-blue-300">My fascination with technology propelled me into the realm of programming, particularly with DirectEd, recognizing its
+                    <p class="text-blue-300 mt-9">My fascination with technology propelled me into the realm of programming, particularly with DirectEd, recognizing its
                     pivotal role in shaping our modern world. From childhood curiosity to witnessing the transformative power of code, I've
                     embraced programming as a means of understanding and actively influencing the technological landscape. With DirectEd,
                     I've found a streamlined approach to coding that empowers me to create, innovate, and tackle complex challenges head-on.
@@ -452,15 +443,15 @@
                 </div>
                 <div class="mt-6 md-0">
                     <a href="#"
-                        class="text-white border border-pink-400 px-2 py-2 rounded-none text-base font-normal hover:bg-pink-400 focus:bg-pink-400 mt-10">Home</a>
+                        class="px-2 py-2 mt-10 text-base font-normal text-white border border-pink-400 rounded-none hover:bg-pink-400 focus:bg-pink-400">Home</a>
                 </div><br>
                 <div class="mt-6 md-0">
                     <a href="#contact"
-                        class="text-white border border-pink-400 px-2 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Contact</a>
+                        class="px-2 py-2 mt-10 text-base font-medium text-white border border-pink-400 rounded-none hover:bg-pink-400 focus:bg-pink-400">Contact</a>
                 </div><br>
                 <div class="mt-6 md-0">
                     <a href="#projects"
-                        class="text-white border border-pink-400 px-2 py-2 rounded-none text-base font-medium hover:bg-pink-400 focus:bg-pink-400 mt-10">Projects</a>
+                        class="px-2 py-2 mt-10 text-base font-medium text-white border border-pink-400 rounded-none hover:bg-pink-400 focus:bg-pink-400">Projects</a>
                 </div><br>
                 
             </div>
@@ -468,30 +459,36 @@
     </section>
 
 
-    <footer class="pt-8 pb-6 bg-blue-700 max-w-full mt-20">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex justify-between items-start">
-                <span class="text-white font-bold text-[26px]">Vaniah<span lass="text-pink-400"></span></span>
-                <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
+    <footer class="max-w-full pt-8 pb-3 mt-10 bg-blue-600">
+        <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="items-start justify-between md:flex">
+                <span class="text-white font-bold text-[26px]">Vaniah</span>
+                <div class="justify-between w-full mt-10 space-y-5 links md:mt-0 md:w-96 md:space-y-0 md:flex">
                     <div class="info">
-                        <h6 class="text-xl text-pink-400 font-semibold mb-6">Information</h6>
-                        <ul class="text-white space-y-3">
-                            <li class="hover:underline"><a href="https://www.instagram.com/official_v.aniah/">@official_v.aniah</a></li>
-                            <li class="hover:underline"><a href="tel:+254706474000">0706474000</a></li>
-                        </ul>
-                    </div>
-                    <div class="social">
-                        <h6 class="text-xl text-pink-400 font-semibold mb-6">Platform</h6>
-                        <ul class="text-white space-y-3">
-                            <li class="hover:underline"><a href="https://www.instagram.com/official_v.aniah/">Instagram Page</a></li>
-                            <li class="hover:underline"><a href="tel:+254706474000">Whatsapp</a></li>
-
+                        <ul class="flex items-center space-x-4 text-white">
+                            <li class="hover:underline">
+                                <a href="https://www.instagram.com/official_v.aniah/">
+                                    <img src="./img/IG.png" alt="Instagram Icon"
+                                        class="w-8 h-8 transition-opacity duration-300 hover:opacity-75">
+                                </a>
+                            </li>
+                            <li class="hover:underline">
+                                <a href="tel:0706474000">
+                                    <img src="./img/WA.png" alt="Phone Icon"
+                                        class="w-8 h-8 transition-opacity duration-300 hover:opacity-75">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
+
+
 
 
 
@@ -522,6 +519,19 @@
             backSpeed: 40,
             loop: true
         });    
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                // Toggle the 'active' class on the mobile menu button
+                mobileMenuBtn.classList.toggle('active');
+                // Toggle the 'active' class on the mobile menu to expand it
+                mobileMenu.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 
